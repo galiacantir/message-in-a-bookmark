@@ -1,0 +1,453 @@
+
+ * {
+--fav-btn: #e96a67;
+--fav-btn-hover: #d21035;
+--cart-btn: #65a57d;
+--cart-btn-hover: #2c6a45;
+--details-btn: #347f8c;
+--details-btn-hover: #236e6e;
+
+ }
+ 
+
+/* Stiluri generale */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+.custom-navbar {
+  background-color: whitesmoke;
+  padding: 15px 0;
+}
+
+.custom-navbar .nav-link {
+  color: #000;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: cadetblue;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #d1d171;
+}
+
+/* --- Header --- */
+.header {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/media/backgroung_1.jpg'); */
+  background-image: url('assets/media/backgroung_5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.header .custom-btn {
+  background-color: #fee088;
+  /* Culoare de fundal */
+  border: none;
+  color: #000;
+  /* Culoare text */
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header .custom-btn:hover {
+  background-color: cadetblue;
+  color:#000;
+}
+
+
+.img-logo{
+  width: 60px;
+  border-radius: 50%;
+}
+/* Navbar/Tabs */
+/* .nav-tabs {
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.nav-tabs .nav-link {
+  color: #333;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #007bff;
+} */
+
+.best-sellers .details-btn{
+  background-color: var(--details-btn);
+  border: none;
+}
+
+.best-sellers .details-btn:hover {
+  background-color: var(--details-btn-hover);
+}
+
+.best-sellers .fav-btn{
+  background-color: var(--fav-btn);
+  border: none;
+}
+
+.best-sellers .fav-btn:hover {
+  background-color: var(--fav-btn-hover);
+}
+
+.best-sellers .cart-btn{
+  background-color: var(--cart-btn);
+  border: none;
+}
+
+.best-sellers .cart-btn:hover {
+  background-color: var(--cart-btn-hover);
+}
+
+
+.new-arrivals .details-btn {
+  background-color: var(--details-btn);
+  border: none;
+}
+
+.new-arrivals .fav-btn {
+  background-color: var(--fav-btn);
+  border: none;
+}
+
+.new-arrivals .cart-btn {
+  background-color: var(--cart-btn);
+  border: none;
+}
+
+.best-sellers,
+.new-arrivals,
+.collections,
+.testimonials,
+.newsletter {
+  padding: 30px 0;
+}
+
+/* Section 1: Besteseller */
+
+.best-sellers .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  /* Asigură că toate cardurile au aceeași înălțime */
+  display: flex;
+  flex-direction: column;
+}
+
+.best-sellers .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.best-sellers .card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 300px;
+  /* Înălțime fixă pentru imagine */
+  object-fit: cover;
+  /* Asigură că imaginile sunt redimensionate corect */
+}
+
+.best-sellers .card-body {
+  flex: 1;
+  /* Asigură că cardurile au aceeași înălțime */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Aliniază conținutul */
+  padding: 20px;
+}
+
+.best-sellers .card-title {
+  font-weight: bold;
+}
+
+.best-sellers .card-text {
+  color: #555;
+}
+
+/* Stiluri pentru butoane */
+.best-sellers .btn {
+  margin-right: 5px;
+  transition: opacity 0.3s ease;
+}
+
+/* Stilizare generală pentru secțiunea CustomOrders */
+.custom-orders {
+  background: #a3e0bb;
+  
+  color: white;
+  padding: 4rem 0;
+  margin: 2rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Stilizare pentru text */
+.custom-orders h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.custom-orders .lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Stilizare pentru buton */
+.custom-orders .custom-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* Stiluri pentru secțiunea Gift Ideas */
+.gift-ideas {
+  padding: 2rem 0;
+}
+
+.gift-ideas h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Stilizare pentru carduri */
+.gift-ideas .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-ideas .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilizare pentru containerul imaginii */
+.gift-ideas .card-img-container {
+  width: 100%;
+  height: 300px;
+  /* Înălțime fixă pentru toate imaginile */
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.gift-ideas .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asigură că imaginile se potrivesc în container */
+}
+
+/* Stilizare pentru body-ul cardului */
+.gift-ideas .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stilizare pentru titlul și prețul produsului */
+.gift-ideas .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.gift-ideas .card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Stilizare pentru butoane */
+.gift-ideas .details-btn {
+  background-color: var(--details-btn);
+  border: none;
+}
+
+.gift-ideas .details-btn:hover {
+  background-color: var(--details-btn-hover);
+}
+
+.gift-ideas .fav-btn {
+  background-color: var(--fav-btn);
+  border: none;
+}
+
+.gift-ideas .fav-btn:hover {
+  background-color: var(--fav-btn-hover);
+}
+
+.gift-ideas .cart-btn {
+  background-color: var(--cart-btn);
+  border: none;
+}
+
+.gift-ideas .cart-btn:hover {
+  background-color: var(--cart-btn-hover);
+}
+
+/* Stiluri pentru secțiunea Theme of the Month */
+/* Stilizare generală pentru secțiunea ThemeOfTheMonth */
+.theme-of-the-month {
+  padding: 2rem 0;
+}
+
+.theme-of-the-month h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.theme-of-the-month p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Stilizare pentru Carousel */
+.theme-of-the-month .carousel {
+  padding: 1rem;
+}
+
+.theme-of-the-month .carousel-item {
+  padding: 1rem;
+}
+
+/* Stilizare pentru informații despre produs */
+.theme-of-the-month .carousel-item h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.theme-of-the-month .carousel-item p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.theme-of-the-month .carousel-item strong {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+/* Stilizare pentru butoane */
+.theme-of-the-month .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.theme-of-the-month .btn-primary {
+  background-color: cadetblue;
+  border: none;
+}
+
+.theme-of-the-month .btn-primary:hover {
+  background-color: #4a0d9b;
+}
+
+.theme-of-the-month .btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.theme-of-the-month .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+/* Stilizare generală pentru secțiunea Newsletter */
+.newsletter {
+  background: coral;
+  padding: 2rem;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Stilizare pentru input */
+.newsletter-input {
+  width: 300px;
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+  border-color: cadetblue;
+}
+
+/* Stilizare pentru buton */
+.newsletter-button {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  background-color: cadetblue;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+
+
