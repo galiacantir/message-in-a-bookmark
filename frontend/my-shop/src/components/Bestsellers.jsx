@@ -4,10 +4,10 @@ import { FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const bestSellers = [
-    { id: 1, name: 'Follow your dreams', price: 10, image: 'src/assets/media/follow_your_dreams_1.jpg' },
+    { id: 1, name: 'Follow your dreams', price: 10, image: 'src/assets/media/follow_your_dreams.jpg' },
     { id: 2, name: 'Find your way', price: 12, image: 'src/assets/media/find_your_way.jpg' },
     { id: 3, name: 'Frida', price: 15, image: 'src/assets/media/frida.jpg' },
-    { id: 4, name: 'Read Books and Drink Tea', price: 8, image: 'src/assets/media/read_book_drink_tea.jpg' },
+    { id: 4, name: 'Read Books and Drink Tea', price: 8, image: 'src/assets/media/read_books_tea.jpg' },
 ];
 
 const Bestsellers = () => {

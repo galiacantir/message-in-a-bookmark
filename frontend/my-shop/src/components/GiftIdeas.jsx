@@ -16,14 +16,14 @@ const giftIdeas = [
         id: 2,
         category: 'Regali Motivazionali',
         products: [
-            { id: 3, name: 'Enjoy the little things', price: 12, image: 'src/assets/media/enjoy_things_2.jpg' },
+            { id: 3, name: 'Enjoy the little things', price: 12, image: 'src/assets/media/enjoy_little_things.jpg' },
         ],
     },
     {
         id: 3,
         category: 'Regali per Amici',
         products: [
-            { id: 5, name: 'Lighthouse', price: 10, image: 'src/assets/media/lighthouse_1.jpg' },
+            { id: 5, name: 'Lighthouse', price: 10, image: 'src/assets/media/lighthouse.jpg' },
         ],
     },
     {

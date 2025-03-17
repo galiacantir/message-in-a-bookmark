@@ -9,14 +9,14 @@ const springProducts = [
         name: 'Find joy in every day',
         description: 'Un segnalibro ricamato con fiori di campo colorati.',
         price: 15,
-        image: 'src/assets/media/find_joy_every_day.jpg',
+        image: 'src/assets/media/find_joy.jpg',
     },
     {
         id: 2,
         name: 'Rose Moldave',
         description: 'Un segnalibro con motivi di farfalle e fiori.',
         price: 18,
-        image: 'src/assets/media/trandafiri_moldova.jpg',
+        image: 'src/assets/media/roses.jpg',
     },
     {
         id: 3,
@@ -67,7 +67,7 @@ const ThemeOfTheMonth = () => {
                 ))}
             </Carousel>
             <div className="text-center mt-4">
-                <Button as={Link} to="/spring-collection">
+                <Button as={Link} to="/products">
                     Vedi tutta la collezione
                 </Button>
             </div>

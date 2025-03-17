@@ -1,0 +1,200 @@
+[
+    {
+        "name_product": "Follow your dreams",
+        "descr_product": "Un segnalibro ispiratore che ti incoraggia a seguire i tuoi sogni.",
+        "price": 15,
+        "image": "src/assets/media/follow_your_dreams.jpg"
+    },
+    {
+        "name_product": "Create your own sunshine",
+        "descr_product": "Un design allegro che ti invita a trovare la felicità nelle piccole cose.",
+        "price": 15,
+        "image": "src/assets/media/create_your_sunshine.jpg"
+    },
+    {
+        "name_product": "Frida - Viva la vida",
+        "descr_product": "Un tributo artistico a Frida Kahlo, con il messaggio iconico \"Viva la vida\".",
+        "price": 12,
+        "image": "src/assets/media/frida_viva_la_vida.jpg"
+    },
+    {
+        "name_product": "New day new chapter",
+        "descr_product": "Perfetto per nuovi inizi, con un messaggio ottimista su ogni giornata.",
+        "price": 13,
+        "image": "src/assets/media/new_day_new_chapter.jpg"
+    },
+    {
+        "name_product": "Dream it, wish it, do it",
+        "descr_product": "Un segnalibro motivazionale che ti sprona a trasformare i sogni in realtà.",
+        "price": 14,
+        "image": "src/assets/media/dream_it_wish_it_do_it.jpg"
+    },
+    {
+        "name_product": "The book is always better",
+        "descr_product": "Per gli amanti dei libri che sanno che i film non sono all'altezza.",
+        "price": 13,
+        "image": "src/assets/media/book_is_always_better.jpg"
+    },
+    {
+        "name_product": "Good vibes",
+        "descr_product": "Un design positivo che diffonde buona energia.",
+        "price": 10,
+        "image": "src/assets/media/good_vibes.jpg"
+    },
+    {
+        "name_product": "Frida",
+        "descr_product": "Bellissimo ritratto di Frida.",
+        "price": 20.00,
+        "image": "src/assets/media/frida.jpg"
+    },
+    {
+        "name_product": "It's your day",
+        "descr_product": "Un segnalibro che ti ricorda che ogni giorno è speciale.",
+        "price": 13,
+        "image": "src/assets/media/its_your_day.jpg"
+    },
+    {
+        "name_product": "Follow your heart",
+        "descr_product": "Un messaggio romantico e saggio sull'ascoltare il proprio cuore.",
+        "price": 12,
+        "image": "src/assets/media/follow_your_heart.jpg"
+    },
+    {
+        "name_product": "Enjoy the little things",
+        "descr_product": "Un segnalibro che ti incoraggia ad apprezzare le piccole cose della vita.",
+        "price": 14,
+        "image": "src/assets/media/enjoy_little_things.jpg"
+    },
+    {
+        "name_product": "Out of this world",
+        "descr_product": "Un design cosmico, perfetto per chi sogna le stelle.",
+        "price": 14,
+        "image": "src/assets/media/out_of_this_world.jpg"
+    },
+    {
+        "name_product": "Make your dreams happen",
+        "descr_product": "Un messaggio potente sul trasformare i sogni in azioni.",
+        "price": 14,
+        "image": "src/assets/media/make_your_dreams_happen.jpg"
+    },
+    {
+        "name_product": "I love you so much",
+        "descr_product": "Un segnalibro romantico, ideale per esprimere amore.",
+        "price": 12,
+        "image": "src/assets/media/i_love_you_so_much.jpg"
+    },
+    {
+        "name_product": "Glow in the dark",
+        "descr_product": "Un design luminoso che brilla al buio.",
+        "price": 14,
+        "image": "src/assets/media/glow_in_the_dark.jpg"
+    },
+    {
+        "name_product": "Roses",
+        "descr_product": "Segnalibri eleganti, decorati con motivi floreali.",
+        "price": 14,
+        "image": "src/assets/media/roses.jpg"
+    },
+    {
+        "name_product": "Lost in a good book",
+        "descr_product": "Per chi si perde volentieri tra le pagine di un buon libro.",
+        "price": 15,
+        "image": "src/assets/media/lost_in_a_good_book.jpg"
+    },
+    {
+        "name_product": "I love you to the moon and back",
+        "descr_product": "Un messaggio dolce e romantico, perfetto per gli amanti dei libri.",
+        "price": 15,
+        "image": "src/assets/media/i_love_you_moon.jpg"
+    },
+    {
+        "name_product": "Cats and books lover",
+        "descr_product": "Un design divertente per chi adora sia i gatti che i libri.",
+        "price": 14,
+        "image": "src/assets/media/cats_and_books.jpg"
+    },
+    {
+        "name_product": "Read books and drink coffee",
+        "descr_product": "Un segnalibro perfetto per chi inizia la giornata con un libro e un caffè.",
+        "price": 13,
+        "image": "src/assets/media/read_books_coffee.jpg"
+    },
+    {
+        "name_product": "I am...",
+        "descr_product": "Un design personalizzabile che ti incoraggia a essere te stesso.",
+        "price": 15,
+        "image": "src/assets/media/i_am.jpg"
+    },
+    {
+        "name_product": "Find joy in every day",
+        "descr_product": "Un messaggio positivo che ti invita a trovare la gioia in ogni giorno.",
+        "price": 14,
+        "image": "src/assets/media/find_joy.jpg"
+    },
+    {
+        "name_product": "Find your way",
+        "descr_product": "Un segnalibro ispiratore sul trovare la propria strada nella vita.",
+        "price": 15,
+        "image": "src/assets/media/find_your_way.jpg"
+    },
+    {
+        "name_product": "Lighthouse",
+        "descr_product": "Design con fari, simbolo di guida e speranza.",
+        "price": 16,
+        "image": "src/assets/media/lighthouse.jpg"
+    },
+    {
+        "name_product": "Flamingo",
+        "descr_product": "Un segnalibro vivace e colorato, con motivi di fenicotteri.",
+        "price": 12,
+        "image": "src/assets/media/flamingo.jpg"
+    },
+    {
+        "name_product": "Free Hugs Cactus Mood",
+        "descr_product": "Un design divertente e ironico, perfetto per chi ha senso dell'umorismo.",
+        "price": 13,
+        "image": "src/assets/media/free_hugs_cactus.jpg"
+    },
+    {
+        "name_product": "Life's sweet - Watermelon",
+        "descr_product": "Un design fresco e dolce, ispirato ai frutti.",
+        "price": 12,
+        "image": "src/assets/media/lifes_sweet_watermelon.jpg"
+    },
+    {
+        "name_product": "Read books and drink tea",
+        "descr_product": "Per chi preferisce il tè al caffè durante la lettura.",
+        "price": 14,
+        "image": "src/assets/media/read_books_tea.jpg"
+    },
+    {
+        "name_product": "Take a deep think",
+        "descr_product": "Un messaggio profondo che ti invita a riflettere.",
+        "price": 15,
+        "image": "src/assets/media/take_a_deep_think.jpg"
+    },
+    {
+        "name_product": "Forza Bologna",
+        "descr_product": "Un segnalibro dedicato ai tifosi del Bologna.",
+        "price": 15,
+        "image": "src/assets/media/forza_bologna.jpg"
+    },
+    {
+        "name_product": "Books and coffee time",
+        "descr_product": "Un design classico per chi passa il tempo con un libro e un caffè.",
+        "price": 14,
+        "image": "src/assets/media/books_coffee_time.jpg"
+    },
+    {
+        "name_product": "You glow girl",
+        "descr_product": "Un messaggio di empowerment per le donne, che ricorda loro di brillare.",
+        "price": 15,
+        "image": "src/assets/media/you_glow_girl.jpg"
+    },
+    {
+        "name_product": "Due Torri di Bologna",
+        "descr_product": "Il simbolo di Bologna.",
+        "price": 15,
+        "image": "src/assets/media/due_torri.jpg"
+    }
+]

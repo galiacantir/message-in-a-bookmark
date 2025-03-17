@@ -42,7 +42,7 @@ body {
 /* --- Header --- */
 .header {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/media/backgroung_1.jpg'); */
-  background-image: url('assets/media/backgroung_5.jpg');
+  background-image: url('assets/media/backgroung_3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -448,6 +448,93 @@ body {
   border: none;
   transition: all 0.3s ease;
 }
+
+
+
+/* Products.css */
+
+/* Stilizare pentru containerul principal */
+.products-page {
+  padding: 20px;
+}
+
+/* Stilizare pentru card-ul produsului */
+.product-card {
+  height: 100%;
+  /* Asigură că toate cardurile au aceeași înălțime */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  /* Efect de hover */
+}
+
+/* Stilizare pentru imaginea produsului */
+.product-image {
+  width: 100%;
+  /* Lățimea completă a cardului */
+  height: 300px;
+  /* Înălțime fixă pentru toate imaginile */
+  object-fit: cover;
+  /* Asigură că imaginile se potrivesc fără a se deforma */
+}
+
+/* Stilizare pentru titlul produsului */
+.product-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Stilizare pentru descrierea produsului */
+.product-card .card-text {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+  /* Asigură că descrierea ocupă spațiul disponibil */
+}
+
+/* Stilizare pentru buton */
+.product-card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Favorites.css */
+
+.favorites-page {
+  padding: 20px;
+}
+
+/* Asigură că toate cardurile au aceeași înălțime */
+.favorites-page .card {
+  height: 100%;
+  /* Cardul ocupă întreaga înălțime a containerului */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* Imaginea cardului */
+.favorites-page .card-img-top {
+  width: 100%;
+  height: 300px;
+  /* Înălțime fixă pentru imagine */
+  object-fit: cover;
+  /* Asigură că imaginea se potrivește fără a se deforma */
+}
+
+
 
 
 
