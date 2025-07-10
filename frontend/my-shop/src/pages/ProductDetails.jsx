@@ -5,14 +5,14 @@ import axios from 'axios';
 
 
 const ProductDetails = () => {
-    const { id } = useParams(); // Obține ID-ul din URL
+    const { id } = useParams(); 
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
         const fetchProductDetails = async () => {
         try {
             const response = await axios.get(`http://localhost:8000/products/${id}`);
-            setProduct(response.data); // Setează detaliile produsului în state
+            setProduct(response.data);
         } catch (error) {
             console.error('Eroare la obținerea detaliilor produsului:', error);
         }
@@ -24,7 +24,7 @@ const ProductDetails = () => {
     
 
     if (!product) {
-        return <div>Loading...</div>; // Afișează un mesaj de încărcare până când datele sunt gata
+        return <div>Loading...</div>;
     }
 
     return (

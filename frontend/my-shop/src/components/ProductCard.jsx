@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart, FaHeart } from 'react-icons/fa'; // Importă icoanele
+import { FaShoppingCart, FaHeart } from 'react-icons/fa'; 
 import axios from 'axios';
 
 const ProductCard = ({ product }) => {
@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
         try {
             await axios.post('http://localhost:8000/cart', {
                 product_id: product.id,
-                quantity: 1  // Cantitatea implicită
+                quantity: 1  
             });
             alert('Produs adăugat în coș!');
         } catch (error) {
@@ -37,10 +37,10 @@ const ProductCard = ({ product }) => {
                 <Card.Text><strong>Preț: {product.price} RON</strong></Card.Text>
                 <Link to={`/products/${product.id}`} className="btn btn-primary me-2">Detalii</Link>
                 <Button variant="success" className="me-2" onClick={addToCart}>
-                    <FaShoppingCart /> {/* Icon coș */}
+                    <FaShoppingCart /> 
                 </Button>
                 <Button variant="outline-danger" onClick={addToFavorites}>
-                    <FaHeart /> {/* Icon favorite */}
+                    <FaHeart />
                 </Button>
             </Card.Body>
         </Card>

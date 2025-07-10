@@ -60,7 +60,7 @@ const Products = () => {
                                 <Card.Title>{product.name_product}</Card.Title>
                                 <Card.Text>{product.descr_product}</Card.Text>
                                 <Card.Text><strong>Prezzo: {product.price} €</strong></Card.Text>
-                                <Button as={Link} to={`/products/${product.id}`} variant="primary">
+                                <Button className='details-btn' as={Link} to={`/products/${product.id}`}>
                                     Vedi dettagli
                                 </Button>
                                 <Button className='fav-btn'
@@ -77,32 +77,6 @@ const Products = () => {
                 ))}
             </Row>
 
-            {/* <Container>
-            <Row className="my-4">
-                <Col>
-                    <Nav variant="tabs" defaultActiveKey="/home">
-                        <Nav.Item>
-                            <Nav.Link href="/home">All</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/bijuterii">Quotes</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/accesorii">Flowers</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/cadouri">Books Quotes</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/cadouri">Freedom Vibes</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="/cadouri">Funny Quotes</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Col>
-            </Row>
-        </Container> */}
         </Container>
     );
 };

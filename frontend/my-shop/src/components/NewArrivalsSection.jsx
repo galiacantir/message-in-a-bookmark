@@ -27,7 +27,6 @@ const NewArrivalsSection = () => {
                                         style={{ height: '200px', objectFit: 'cover' }}
                                     />
                                     <Card.Body>
-                                        {/* Titlul și descrierea */}
                                         <Card.Title>{product.name}</Card.Title>
                                         <Card.Text>{product.description}</Card.Text>
                                         <Card.Text>

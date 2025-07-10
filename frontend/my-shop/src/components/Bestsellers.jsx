@@ -15,7 +15,7 @@ const Bestsellers = () => {
         <Container className='best-sellers'>
             <Row>
                 <Col>
-                    <h2 className="text-center p-4">I Nostri Best Seller</h2>
+                    <h2 className="text-center p-4">I Nostri BestSeller</h2>
                     <Row>
                         {bestSellers.map((product) => (
                             <Col key={product.id} md={3} className="mb-4">

@@ -11,6 +11,7 @@ import Favorites from './pages/Favorites';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './pages/About';
 
+
 const App = () => {
   return (
     <Router>

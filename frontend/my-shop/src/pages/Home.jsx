@@ -20,7 +20,7 @@ const Home = () => {
                 <Col>
                     <h1>Message in a Bookmark Shop</h1>
                     <p>Ricamati con passione, ogni segnalibro racconta una storia.</p>
-                    <Button as={Link} to='/products' className='custom-btn'>Scopri la collezione</Button>
+                    <Button as={Link} to='/products' className='custom-btn'>Scopri tutta la collezione</Button>
                 </Col>
             </Row>
         </Container>
@@ -42,7 +42,10 @@ const Home = () => {
     
         {/* --- Section 6: Newsletter --- */}
         <Newsletter/> 
-            
+
+        {/* --- Footer --- */}
+        <Footer/>
+
         </>
     );
 };

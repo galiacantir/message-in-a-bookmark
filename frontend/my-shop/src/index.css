@@ -1,48 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
- * {
+* {
 --fav-btn: #e96a67;
 --fav-btn-hover: #d21035;
 --cart-btn: #65a57d;
 --cart-btn-hover: #2c6a45;
 --details-btn: #347f8c;
 --details-btn-hover: #236e6e;
+}
 
- }
- 
+/* --- Stiluri generale --- */
 
-/* Stiluri generale */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Roboto", sans-serif !important;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
 
-
 .custom-navbar {
-  background-color: whitesmoke;
+  background-color: #2c3e50;
   padding: 15px 0;
 }
 
 .custom-navbar .nav-link {
-  color: #000;
+  color: rgb(225, 221, 221);
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
   margin: 0 10px;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
-.custom-navbar .nav-link:hover {
-  color: cadetblue;
+.custom-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover{
+  color: white;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+  color: white;
 }
 
 .custom-navbar .navbar-toggler {
-  border-color: #d1d171;
+  border-color: #2c3e50;
 }
 
-/* --- Header --- */
+/* --- Header Section --- */
+
 .header {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/media/backgroung_1.jpg'); */
-  background-image: url('assets/media/backgroung_3.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/media/backgroung_3.jpg'); */
+  background-image: url('assets/media/backgroung_5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -66,49 +86,25 @@ body {
 }
 
 .header .custom-btn {
-  background-color: #fee088;
-  /* Culoare de fundal */
+  background-color: cadetblue;
   border: none;
   color: #000;
-  /* Culoare text */
   padding: 10px 30px;
   font-size: 1.1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .header .custom-btn:hover {
-  background-color: cadetblue;
-  color:#000;
+  background-color: #2c3e50;
+  color:whitesmoke;
 }
-
 
 .img-logo{
   width: 60px;
   border-radius: 50%;
 }
-/* Navbar/Tabs */
-/* .nav-tabs {
-  justify-content: center;
-  margin: 40px 0;
-}
 
-.nav-tabs .nav-link {
-  color: #333;
-  font-weight: bold;
-  margin: 0 15px;
-  padding: 10px 20px;
-  border: none;
-  transition: color 0.3s ease;
-}
-
-.nav-tabs .nav-link.active {
-  color: #007bff;
-  border-bottom: 3px solid #007bff;
-}
-
-.nav-tabs .nav-link:hover {
-  color: #007bff;
-} */
+/* --- BestSellers Section --- */
 
 .best-sellers .details-btn{
   background-color: var(--details-btn);
@@ -137,10 +133,13 @@ body {
   background-color: var(--cart-btn-hover);
 }
 
-
 .new-arrivals .details-btn {
   background-color: var(--details-btn);
   border: none;
+}
+
+.new-arrivals .details-btn:hover{
+  background-color: var(--details-btn-hover);
 }
 
 .new-arrivals .fav-btn {
@@ -148,9 +147,17 @@ body {
   border: none;
 }
 
+.new-arrivals .fav-btn:hover {
+  background-color: var(--fav-btn-hover);
+}
+
 .new-arrivals .cart-btn {
   background-color: var(--cart-btn);
   border: none;
+}
+
+.new-arrivals .cart-btn:hover{
+  background-color: var(--cart-btn-hover);
 }
 
 .best-sellers,
@@ -161,7 +168,7 @@ body {
   padding: 30px 0;
 }
 
-/* Section 1: Besteseller */
+/* --- Section 1: Besteseller --- */
 
 .best-sellers .card {
   border: none;
@@ -169,7 +176,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  /* Asigură că toate cardurile au aceeași înălțime */
   display: flex;
   flex-direction: column;
 }
@@ -181,18 +187,14 @@ body {
 .best-sellers .card-img-top {
   border-radius: 10px 10px 0 0;
   height: 300px;
-  /* Înălțime fixă pentru imagine */
   object-fit: cover;
-  /* Asigură că imaginile sunt redimensionate corect */
 }
 
 .best-sellers .card-body {
   flex: 1;
-  /* Asigură că cardurile au aceeași înălțime */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Aliniază conținutul */
   padding: 20px;
 }
 
@@ -204,16 +206,14 @@ body {
   color: #555;
 }
 
-/* Stiluri pentru butoane */
 .best-sellers .btn {
   margin-right: 5px;
   transition: opacity 0.3s ease;
 }
 
-/* Stilizare generală pentru secțiunea CustomOrders */
+/* --- Section: Custom-Orders --- */
 .custom-orders {
-  background: #a3e0bb;
-  
+  background: cadetblue;
   color: white;
   padding: 4rem 0;
   margin: 2rem 0;
@@ -221,7 +221,6 @@ body {
   position: relative;
 }
 
-/* Stilizare pentru text */
 .custom-orders h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -233,7 +232,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Stilizare pentru buton */
 .custom-orders .custom-button {
   font-size: 1.1rem;
   font-weight: bold;
@@ -245,7 +243,8 @@ body {
   z-index: 2;
 }
 
-/* Stiluri pentru secțiunea Gift Ideas */
+
+/* --- Section: Gift Ideas --- */
 .gift-ideas {
   padding: 2rem 0;
 }
@@ -257,7 +256,6 @@ body {
   color: #333;
 }
 
-/* Stilizare pentru carduri */
 .gift-ideas .card {
   border: none;
   border-radius: 10px;
@@ -268,11 +266,9 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Stilizare pentru containerul imaginii */
 .gift-ideas .card-img-container {
   width: 100%;
   height: 300px;
-  /* Înălțime fixă pentru toate imaginile */
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
@@ -281,10 +277,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Asigură că imaginile se potrivesc în container */
 }
 
-/* Stilizare pentru body-ul cardului */
 .gift-ideas .card-body {
   padding: 1.5rem;
   display: flex;
@@ -292,7 +286,6 @@ body {
   align-items: center;
 }
 
-/* Stilizare pentru titlul și prețul produsului */
 .gift-ideas .card-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -306,7 +299,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Stilizare pentru butoane */
 .gift-ideas .details-btn {
   background-color: var(--details-btn);
   border: none;
@@ -334,8 +326,7 @@ body {
   background-color: var(--cart-btn-hover);
 }
 
-/* Stiluri pentru secțiunea Theme of the Month */
-/* Stilizare generală pentru secțiunea ThemeOfTheMonth */
+/* --- Section: Theme of the Monts --- */
 .theme-of-the-month {
   padding: 2rem 0;
 }
@@ -350,7 +341,6 @@ body {
   color: #666;
 }
 
-/* Stilizare pentru Carousel */
 .theme-of-the-month .carousel {
   padding: 1rem;
 }
@@ -359,7 +349,6 @@ body {
   padding: 1rem;
 }
 
-/* Stilizare pentru informații despre produs */
 .theme-of-the-month .carousel-item h3 {
   font-size: 1.75rem;
   font-weight: bold;
@@ -376,7 +365,6 @@ body {
   color: #333;
 }
 
-/* Stilizare pentru butoane */
 .theme-of-the-month .btn {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
@@ -404,10 +392,9 @@ body {
   color: white;
 }
 
-
-/* Stilizare generală pentru secțiunea Newsletter */
+/*--- Section: Newsletter ---
 .newsletter {
-  background: coral;
+  
   padding: 2rem;
 }
 
@@ -424,7 +411,6 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Stilizare pentru input */
 .newsletter-input {
   width: 300px;
   border: 1px solid cadetblue;
@@ -439,7 +425,6 @@ body {
   border-color: cadetblue;
 }
 
-/* Stilizare pentru buton */
 .newsletter-button {
   font-size: 1rem;
   padding: 0.75rem 2rem;
@@ -450,18 +435,77 @@ body {
 }
 
 
+*/
 
-/* Products.css */
+.newsletter-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin: 4rem auto;
+}
 
-/* Stilizare pentru containerul principal */
+.newsletter-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.newsletter-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-input {
+  border: 2px solid #dee2e6;
+  border-radius: 50px !important;
+  min-width: 300px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  border-color: #347f8c;
+  box-shadow: 0 0 0 0.25rem rgba(52, 127, 140, 0.25);
+}
+
+.newsletter-button {
+  border-radius: 50px !important;
+  font-weight: 600;
+  background-color: #347f8c;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #2c6a45;
+  transform: translateY(-2px);
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    min-width: auto;
+  }
+}
+/* --- Products Page --- */
+
 .products-page {
   padding: 20px;
 }
 
-/* Stilizare pentru card-ul produsului */
 .product-card {
   height: 100%;
-  /* Asigură că toate cardurile au aceeași înălțime */
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
@@ -472,50 +516,73 @@ body {
 
 .product-card:hover {
   transform: scale(1.05);
-  /* Efect de hover */
 }
 
-/* Stilizare pentru imaginea produsului */
 .product-image {
   width: 100%;
-  /* Lățimea completă a cardului */
   height: 300px;
-  /* Înălțime fixă pentru toate imaginile */
   object-fit: cover;
-  /* Asigură că imaginile se potrivesc fără a se deforma */
 }
 
-/* Stilizare pentru titlul produsului */
 .product-card .card-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Stilizare pentru descrierea produsului */
 .product-card .card-text {
   font-size: 0.9rem;
   color: #555;
   flex-grow: 1;
-  /* Asigură că descrierea ocupă spațiul disponibil */
 }
 
-/* Stilizare pentru buton */
 .product-card .btn {
   width: 100%;
   margin-top: 10px;
+  margin-right: 5px;
+  transition: opacity 0.3s ease;
 }
 
-/* Favorites.css */
+.products-page .fav-btn {
+  background-color: var(--fav-btn);
+  border: none;
+  margin-right: 5px;
+}
+
+.products-page .fav-btn:hover {
+  background-color: var(--fav-btn-hover);
+}
+
+.products-page .details-btn {
+  background-color: var(--details-btn);
+  border: none;
+  margin-right: 5px;
+}
+.products-page .details-btn:hover{
+  background-color: var(--details-btn-hover);
+}
+
+.products-page .cart-btn {
+  background-color: var(--cart-btn);
+  border: none;
+}
+
+.products-page .cart-btn:hover{
+  background-color: var(--cart-btn-hover);
+}
+
+
+
+
+
+/* --- Favorites Page --- */
 
 .favorites-page {
   padding: 20px;
 }
 
-/* Asigură că toate cardurile au aceeași înălțime */
 .favorites-page .card {
   height: 100%;
-  /* Cardul ocupă întreaga înălțime a containerului */
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
@@ -524,14 +591,10 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-
-/* Imaginea cardului */
 .favorites-page .card-img-top {
   width: 100%;
   height: 300px;
-  /* Înălțime fixă pentru imagine */
   object-fit: cover;
-  /* Asigură că imaginea se potrivește fără a se deforma */
 }
 
 
