@@ -1,12 +1,26 @@
-# React + Vite
+Message in a Bookmark è un progetto personale nato dalla mia attività artigianale: realizzo segnalibri ricamati a mano, unendo la passione per il ricamo con il mondo del web.
+Sto sviluppando un sito e-commerce per promuovere e, in futuro, vendere online le mie creazioni handmade.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Struttura della Homepage: La homepage include diverse sezioni per valorizzare il prodotto artigianale:
 
-Currently, two official plugins are available:
+Header: titolo, slogan e bottone per lo shop
+Bestsellers: prodotti più apprezzati
+New Arrivals: novità recenti
+Gift Ideas: idee regalo
+Custom Orders: segnalibri su richiesta
+Theme of the Month: collezione mensile (es. primavera)
+Newsletter: iscrizione per aggiornamenti
+Tecnologie utilizzate:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend:
 
-## Expanding the ESLint configuration
+React
+CSS
+React Bootstrap
+React Router
+React Icons
+Backend:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Python
+FastAPI
+SQL (database relazionale)
