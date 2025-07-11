@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
+      <Footer/>
       {/* <Footer /> */}
     </Router>
   );
